@@ -27,7 +27,11 @@
    assign a Supervisor to an employee in their detailed edit screen, assign them to yourself, and 
    finally select yourself in the drop-down to see the employee you now are the boss of.
 
-3. Separate name space for data containers
+5. Separate name space for data containers
+
+6. LINQ queries
+
+7. Admin, Member, and Public Role Based Authentication
 
 - - -
 ## User Specs
@@ -71,6 +75,16 @@
 .NET Query Expressions
 .NET Automatically Implemented Properties
 .NET LINQ
+ASP.NET Grid View
+ASP.NET Repeater
+ASP.NET Form View
+ASP.NET Login View
+ASP.NET Site Map Path
+ASP.NET Skin
+ASP.NET Theme
+ASP.NET Master Page
+ASP.NET Object Data Source
+ASP.NET Role Based Security
 .NET Partial Classes and Methods
 .NET Generic Type
 .NET Nullable Type
