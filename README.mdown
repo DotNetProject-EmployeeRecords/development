@@ -9,8 +9,8 @@
 - - -
 ## Minimum Required
 
-1. Visual Studio 2010 (Web Developer Express Edition) or higher
-2. Sql Server 2005 (Express Edition) or higher
+1. Visual Studio 2010 (Web Developer Express Edition)(Use 2010 Express For Best Results)
+2. Sql Server 2005 (Express Edition) or higher (Use 2010 Express For Best Results)
 
 - - -
 ## Features
@@ -107,4 +107,4 @@ CREATE PROCEDURE [dbo].[GetUserSalary]
       set rowcount 0
 ---
 
-> Philip: Thank you for your time and for reviewing my work. Even though I didn't have tons of time, I still think you will enjoy the application for what it is. I hope to see you at work in the near future. And just FYI: I typically only deploy the compiled .dll file to a server, especially in a production environment but I'm assuming you want to see the codebehind.
+> Philip: Thank you for your time and for reviewing my work. If you are to have ANY issues building or running the application, please let me know because it's working on my side. Even though I didn't have tons of time, I still think you will enjoy the application for what it is. I hope to see you at work in the near future. And just FYI: I typically only deploy the compiled .dll file to a server, especially in a production environment but I'm assuming you want to see the codebehind.
