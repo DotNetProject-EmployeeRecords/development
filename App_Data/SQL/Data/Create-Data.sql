@@ -1,0 +1,32 @@
+﻿--============================================================================
+-- SETUP SCRIPT --
+--============================================================================
+
+SET IDENTITY_INSERT [dbo].[Employees] ON
+
+IF NOT EXISTS (SELECT * FROM Employees WHERE EmployeeId = 1)
+INSERT [dbo].[Employees] ([EmployeeId], [LastName], [FirstName], [Title], [TitleOfCourtesy], [BirthDate], [HireDate], [Address], [City], [Region], [PostalCode], [Country], [HomePhone], [Extension], [Photo], [Notes], [ReportsTo]) VALUES (1, N'Strausbaugh', N'Jarrad', N'Software Engineer', N'Mr.', CAST(0x000045D100000000 AS DateTime), CAST(0x000083BB00000000 AS DateTime), N'123, Sand Hill Rd', N'Hershey', N'PA', N'17033', N'USA', N'(717) 602-3166', N'0000',NULL, N'Jarrads Profile', NULL)
+IF NOT EXISTS (SELECT * FROM Employees WHERE EmployeeId = 2)
+INSERT [dbo].[Employees] ([EmployeeId], [LastName], [FirstName], [Title], [TitleOfCourtesy], [BirthDate], [HireDate], [Address], [City], [Region], [PostalCode], [Country], [HomePhone], [Extension], [Photo], [Notes], [ReportsTo]) VALUES (2, N'Copley', N'Phillip', N'Application Developer ', N'Mr.', CAST(0x00004A6100000000 AS DateTime), CAST(0x0000842400000000 AS DateTime), N'123 Cool Way', N'Lancaster', NULL, N'17603', N'USA', N'(717) 502-9482', N'0000', NULL, N'Cool guy!', NULL)
+IF NOT EXISTS (SELECT * FROM Employees WHERE EmployeeId = 3)
+INSERT [dbo].[Employees] ([EmployeeId], [LastName], [FirstName], [Title], [TitleOfCourtesy], [BirthDate], [HireDate], [Address], [City], [Region], [PostalCode], [Country], [HomePhone], [Extension], [Photo], [Notes], [ReportsTo]) VALUES (3, N'Wolfe', N'Eric', N'Vice President', N'Mr.', CAST(0x00005AD300000000 AS DateTime), CAST(0x0000839D00000000 AS DateTime), N'123 Coolguy Way', N'Lancaster', N'PA', N'17603', N'USA', N'(717) 555-3412', N'5555', NULL, N'Eric has a BS in Management', 2)
+IF NOT EXISTS (SELECT * FROM Employees WHERE EmployeeId = 4)
+INSERT [dbo].[Employees] ([EmployeeId], [LastName], [FirstName], [Title], [TitleOfCourtesy], [BirthDate], [HireDate], [Address], [City], [Region], [PostalCode], [Country], [HomePhone], [Extension], [Photo], [Notes], [ReportsTo]) VALUES (4, N'Crazy', N'Jill', N'Sales Representative', N'Mrs.', CAST(0x000035CF00000000 AS DateTime), CAST(0x0000852A00000000 AS DateTime), N'4110 Old Redmond Rd.', N'Redmond', N'WA', N'98052', N'USA', N'(717) 555-3412', N'5176', NULL, N'Jill has a good time at work.', 1)
+IF NOT EXISTS (SELECT * FROM Employees WHERE EmployeeId = 5)
+INSERT [dbo].[Employees] ([EmployeeId], [LastName], [FirstName], [Title], [TitleOfCourtesy], [BirthDate], [HireDate], [Address], [City], [Region], [PostalCode], [Country], [HomePhone], [Extension], [Photo], [Notes], [ReportsTo]) VALUES (5, N'Burp', N'Bob', N'Sales Manager', N'Mr.', CAST(0x00004EB600000000 AS DateTime), CAST(0x000085D100000000 AS DateTime), N'14 GoodGuy Hill', N'Lancaster', NULL, N'Harrisburg', N'USA', N'(717) 555-3412', N'3453', NULL, N'Bob is a great co-worker.', 1)
+IF NOT EXISTS (SELECT * FROM Employees WHERE EmployeeId = 6)
+INSERT [dbo].[Employees] ([EmployeeId], [LastName], [FirstName], [Title], [TitleOfCourtesy], [BirthDate], [HireDate], [Address], [City], [Region], [PostalCode], [Country], [HomePhone], [Extension], [Photo], [Notes], [ReportsTo]) VALUES (6, N'More', N'Mike', N'Sales Representative', N'Mr.', CAST(0x00005A9800000000 AS DateTime), CAST(0x000085D100000000 AS DateTime), N'14 GoodGuy Hill', N'Lancaster', NULL, N'EC2 7JR', N'USA', N'(717) 555-3412', N'428', NULL, N'Mike is a great co-worker.', 1)
+IF NOT EXISTS (SELECT * FROM Employees WHERE EmployeeId = 7)
+INSERT [dbo].[Employees] ([EmployeeId], [LastName], [FirstName], [Title], [TitleOfCourtesy], [BirthDate], [HireDate], [Address], [City], [Region], [PostalCode], [Country], [HomePhone], [Extension], [Photo], [Notes], [ReportsTo]) VALUES (7, N'Rudolph', N'Rob', N'Sales Representative', N'Mr.', CAST(0x0000562F00000000 AS DateTime), CAST(0x0000861E00000000 AS DateTime), N'14 GoodGuy Hill', N'Lancaster', NULL, N'RG1 9SP', N'USA', N'(717) 555-3412', N'465', NULL, N'Rob is a good worker.', 1)
+IF NOT EXISTS (SELECT * FROM Employees WHERE EmployeeId = 8)
+INSERT [dbo].[Employees] ([EmployeeId], [LastName], [FirstName], [Title], [TitleOfCourtesy], [BirthDate], [HireDate], [Address], [City], [Region], [PostalCode], [Country], [HomePhone], [Extension], [Photo], [Notes], [ReportsTo]) VALUES (8, N'Cali', N'Laura', N'Inside Sales Coordinator', N'Ms.', CAST(0x000052C800000000 AS DateTime), CAST(0x0000865C00000000 AS DateTime), N'14 GoodGuy Hill', N'Arizona', N'WA', N'98105', N'USA', N'(717) 555-3412', N'2344', NULL, N'Laura is a great co-worker.', 1)
+IF NOT EXISTS (SELECT * FROM Employees WHERE EmployeeId = 9)
+INSERT [dbo].[Employees] ([EmployeeId], [LastName], [FirstName], [Title], [TitleOfCourtesy], [BirthDate], [HireDate], [Address], [City], [Region], [PostalCode], [Country], [HomePhone], [Extension], [Photo], [Notes], [ReportsTo]) VALUES (9, N'Smith', N'John', N'Sales Representative', N'Mr.', CAST(0x00005E4400000000 AS DateTime), CAST(0x0000875B00000000 AS DateTime), N'14 GoodGuy Hill', N'Lancaster', NULL, N'WG2 7LT', N'USA', N'(717) 555-3412', N'452', NULL, N'John is a great co-worker.', 1)
+IF NOT EXISTS (SELECT * FROM Employees WHERE EmployeeId = 10)
+INSERT [dbo].[Employees] ([EmployeeId], [LastName], [FirstName], [Title], [TitleOfCourtesy], [BirthDate], [HireDate], [Address], [City], [Region], [PostalCode], [Country], [HomePhone], [Extension], [Photo], [Notes], [ReportsTo]) VALUES (10, N'Dell', N'Nancy', N'Sales Representative', N'Ms.', CAST(0x000045D100000000 AS DateTime), CAST(0x000083BB00000000 AS DateTime), N'14 GoodGuy Hill', N'Arizona', N'WA', N'98122', N'USA', N'(717) 555-3412', N'5467', NULL, N'Nancy is a great co-worker.', 1)
+IF NOT EXISTS (SELECT * FROM Employees WHERE EmployeeId = 11)
+INSERT [dbo].[Employees] ([EmployeeId], [LastName], [FirstName], [Title], [TitleOfCourtesy], [BirthDate], [HireDate], [Address], [City], [Region], [PostalCode], [Country], [HomePhone], [Extension], [Photo], [Notes], [ReportsTo]) VALUES (11, N'Girl', N'Girly', N'Sales Representative', N'Ms.', CAST(0x000045D100000000 AS DateTime), CAST(0x000083BB00000000 AS DateTime), N'14 GoodGuy Hill', N'Arizona', N'WA', N'98122', N'USA', N'(717) 555-3412', N'5467', NULL, N'Girly Girl is a great co-worker.', 1)
+
+SET IDENTITY_INSERT [dbo].[Employees] OFF
+--============================================================================
+--============================================================================

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/default.aspx" title="Root"  description="Root">
+	<siteMapNode url="~/web-form-samples/listing-page.aspx?" title="Employee Search" description="Employee Search">
+      <siteMapNode url="~/web-form-samples/listing-page.aspx" title="Employee Records"  description="Employee Records" />
+      <siteMapNode url="~/employee/view/1.aspx" title="My Details"  description="My Details" />
+    </siteMapNode>
+    <siteMapNode url="~/secured/default.aspx" title="Security Samples" description="Security Samples">
+      <siteMapNode url="~/secured/public/public.aspx" title="Public Access" description="Public Access"/>
+      <siteMapNode url="~/secured/member/member-default.aspx" title="Member Security" description="Member Security"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
