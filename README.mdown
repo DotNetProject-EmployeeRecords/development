@@ -2,12 +2,15 @@
 
 ##Technology
 
-C# 5.0
-.NET Framework 4.5.1
-ASP.NET MVC 5.0
-Entity Framework 6.0.1
-Sql Server Compact Edition
-Visual Studio 2013
+1. NET Framework 4.0
+2. JavaScript Framework: jQuery 1.5.1
+3. CSS Framework: 960 grid system
+
+- - -
+## Minimum Required
+
+1. Visual Studio 2010 (Web Developer Express Edition) or higher
+2. Sql Server 2005 (Express Edition) or higher
 
 - - -
 ## Features
@@ -34,24 +37,50 @@ Visual Studio 2013
 - - -
 ##Architecture
 
-1. Based on Model-View-Controller pattern
+1. Simple 3 layer architecture (presentation, business logic and data access layer)
 
-2. I built-in support for mobile browsers.
+2. ASP.NET web form based user interface.
 
-3. Usage of Domain Model, Repository and Unit of Work pattern from Domain Driven Development approach.
+3. Built-in Entity Framework entities as business entities (aka: data containers)
 
-4. Several helper classes and extension methods to enable PFC developers to build application with reduced code
+4. Data Mapper design pattern based Data Access Layer, implemented in C# and Entity Framework
 
 5. Usage of Data Annotations in model (entity) classes to centralize basic validation mechanism that facilitates DRY principle
 
-6. Usage of IValidatableObject interface in model (entity) classes that isolates custom business logic from application layer
+6. Built-in code generators for logical layers, implemented in Visual Studio default template engine
 
-7. Usage of OOP inheritance and Value Object pattern in model (entity) classes that provides reusability in application architecture
+7. Object Model for Cross Cutting Concerns (such as validation, logging, exception management)
 
-8. Usage of View Model, Editor Model pattern that provides mechanism for testable view rendering logic
+- - -
+## .NET Framework Components
 
-9. Several helper classes and extension methods to enable developers build application with reduced code
+.NET Entity Framework
+.NET Optional/Named Parameters
+.NET Tuple
+.NET Extension Method
+.NET Lambda Expressions
+.NET Anonymous Type
+.NET Query Expressions
+.NET Automatically Implemented Properties
+.NET LINQ
+.NET Partial Classes and Methods
+.NET Generic Type
+.NET Nullable Type
+ASP.NET Meta Description and Keyword Support
+ASP.NET Routing
+ASP.NET Grid View
+ASP.NET Repeater
+ASP.NET Form View
+ASP.NET Login View
+ASP.NET Site Map Path
+ASP.NET Skin
+ASP.NET Theme
+ASP.NET Master Page
+ASP.NET Object Data Source
+ASP.NET Role Based Security
 ---
+
+
 
 Store Procedure Using employeeID to return firstname. Obviously, you can return whatever you want but you get the point.
 CREATE PROCEDURE [dbo].[GetUserName]
