@@ -4,20 +4,28 @@
 
 1. NET Framework 4.0
 2. JavaScript Framework: jQuery 1.5.1
-3. CSS Framework: 960 grid system
+3. CSS
 
 - - -
-## Minimum Required
+### Minimum Required
 
-1. Visual Studio 2010 (Web Developer Express Edition) (Use Visual 2010 Express For Best Results)
-2. Sql Server 2010 (Express Edition) or higher (Use 2010 Express For Best Results)
+1. Visual Studio 2010 - (Use Visual 2010 Express For Best Results)
+2. Sql Server 2010 - (Use 2010 Express For Best Results)
 
 - - -
 ## Features
 
-1. Made ObjectSet properties of database context as virtual and return type as IObjectSet 
+1. Polymorphism
 
 2. Made stored procedure (function import) methods virtual and return type as List<Entity>
+
+3. Stored procedure to display all data about an employee with employee ID. This can be seen
+   by clicking on the magnifying glass on any given corresponding record row or click on the edit icon
+   in the far right column.
+
+4. You can also search by Supervisor to display which employees is he the boss of. You can also
+   assign a Supervisor to an employee in their detailed edit screen, assign them to yourself, and 
+   finally select yourself in the drop-down to see the employee you now are the boss of.
 
 3. Separate name space for data containers
 
