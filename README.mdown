@@ -107,4 +107,4 @@ CREATE PROCEDURE [dbo].[GetUserSalary]
       set rowcount 0
 ---
 
-> Philip: Thank you for your time and for reviewing my work. Even though I didn't have tons of time, I still think you will enjoy the application for what it is. I hope to see you at work in the near future.
+> Philip: Thank you for your time and for reviewing my work. Even though I didn't have tons of time, I still think you will enjoy the application for what it is. I hope to see you at work in the near future. And just FYI: I typically only deploy the compiled .dll file to a server, especially in a production environment but I'm assuming you want to see the codebehind.
