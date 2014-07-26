@@ -9,8 +9,8 @@
 - - -
 ## Minimum Required
 
-1. Visual Studio 2010 (Web Developer Express Edition)(Use 2010 Express For Best Results)
-2. Sql Server 2005 (Express Edition) or higher (Use 2010 Express For Best Results)
+1. Visual Studio 2010 (Web Developer Express Edition) (Use Visual 2010 Express For Best Results)
+2. Sql Server 2010 (Express Edition) or higher (Use 2010 Express For Best Results)
 
 - - -
 ## Features
