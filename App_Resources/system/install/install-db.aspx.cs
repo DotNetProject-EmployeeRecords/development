@@ -97,7 +97,7 @@ namespace Eisk
             {
                 SqlScriptRunner.RunScript(Server.MapPath("~") + @"\App_Data\SQL\Schema\Create-Schema.sql");
                 SqlScriptRunner.RunScript(Server.MapPath("~") + @"\App_Data\SQL\Data\Create-Data.sql");
-                labelMessage.Text = MessageFormatter.GetFormattedSuccessMessage("Congratulations! Database installation successful. Click <a href=\"../../../default.aspx\">here </a>to start using Employee Info Starter Kit.");
+                labelMessage.Text = MessageFormatter.GetFormattedSuccessMessage("Congratulations! Database installation successful. Click <a href=\"../../../default.aspx\">here </a>to start using Jarrad's Employee Record Application.");
             }
             catch (Exception ex)
             {
