@@ -1,107 +1,110 @@
-# Run some sand through your hands
+# Assumptions For Phil To Consider
 
-Welcome to your personal sandbox, you can’t really break anything so feel free to go a bit crazy. We’ve created a couple basic tasks to get you started. Try them both, or just play in your sandbox to get acquainted with Bitbucket. 
+##Technology
 
-You can complete the following tasks with either [SourceTree](http://sourcetreeapp.com) (Atlassian’s Git and Mercurial client) or using the command line from Linux or OSX. Or use the [BASH command line tools](http://git-scm.com/download/win) for Windows. 
+1. NET Framework 4.0
+2. JavaScript Framework: jQuery 1.5.1
+3. CSS Framework: 960 grid system
 
 - - -
-## A word to the wise
-While it's true you cannot really break anything in the bucket-o-sand you should keep the following in mind: 
+## Minimum Required
 
-* We designed this as a practice repo to help you get acquainted with Bitbucket. 
-* At this point we've not designed this tutorial to include pull requests to the source repository, we usually close them with a note thanking you for your time. 
-* This repository is usually a fork of a [source repository](https://bitbucket.org/tutorials/bucket-o-sand). For this reason, when you are ready to start coding you will likely want to create an entirely new repo to use for your project. 
+1. Visual Studio 2010 (Web Developer Express Edition)(Use 2010 Express For Best Results)
+2. Sql Server 2005 (Express Edition) or higher (Use 2010 Express For Best Results)
 
-Happy coding! 
+- - -
+## Features
 
+1. Made ObjectSet properties of database context as virtual and return type as IObjectSet 
+
+2. Made stored procedure (function import) methods virtual and return type as List<Entity>
+
+3. Separate name space for data containers
+
+- - -
+## User Specs
+
+1. Creating a new employee record
+
+2. Read existing employee records
+
+3. Update an existing employee record
+
+4. Delete existing employee records
+
+5. Role based security model
+
+- - -
+##Architecture
+
+1. Simple 3 layer architecture (presentation, business logic and data access layer)
+
+2. ASP.NET web form based user interface.
+
+3. Built-in Entity Framework entities as business entities (aka: data containers)
+
+4. Data Mapper design pattern based Data Access Layer, implemented in C# and Entity Framework
+
+5. Usage of Data Annotations in model (entity) classes to centralize basic validation mechanism that facilitates DRY principle
+
+6. Built-in code generators for logical layers, implemented in Visual Studio default template engine
+
+7. Object Model for Cross Cutting Concerns (such as validation, logging, exception management)
+
+- - -
+## .NET Framework Components
+
+.NET Entity Framework
+.NET Optional/Named Parameters
+.NET Tuple
+.NET Extension Method
+.NET Lambda Expressions
+.NET Anonymous Type
+.NET Query Expressions
+.NET Automatically Implemented Properties
+.NET LINQ
+.NET Partial Classes and Methods
+.NET Generic Type
+.NET Nullable Type
+ASP.NET Meta Description and Keyword Support
+ASP.NET Routing
+ASP.NET Grid View
+ASP.NET Repeater
+ASP.NET Form View
+ASP.NET Login View
+ASP.NET Site Map Path
+ASP.NET Skin
+ASP.NET Theme
+ASP.NET Master Page
+ASP.NET Object Data Source
+ASP.NET Role Based Security
 ---
-## Using SourceTree 
 
 
-###TASK 1. Clone the repository to your local machine
 
-Cloning copies the repository to your local system.
+Store Procedure Using employeeID to return firstname. Obviously, you can return whatever you want but you get the point.
+CREATE PROCEDURE [dbo].[GetUserName]
+      @employeeID int,
+      @firstName nvarchar(50) OUTPUT
+      AS
+      SELECT @firstName = firstName FROM Department
+      WHERE employeeID = @employeeID
 
-1. Click the **Clone in SourceTree** icon, a down arrow, near the top of the page, then click **Clone in SourceTree**.
-	* A *Launch application* window opens. 
-2. Select SourceTree, if it is not already selected, and click **OK**.
-	* SourceTree may ask for your password several times.
-3. Review the information in the Clone new tab. Notice the **Destination Path** is where you will clone your repository.
-4. Click **Clone** 
+Store Procedure Using Salary to return employeeID. Obviously, you can return whatever you want and probably would benefit from returning first name, last name, etc but I'm really tired so hopefully you can see I get the concept.
+CREATE PROCEDURE [dbo].[GetUserSalary]
+      @salary int,
+      @employeeID int OUTPUT
+      AS
+      (Recursive Loop through each ID)
+      while @@rowcount <> 0
+      begin
+      set rowcount 0
+      SELECT @employeeID = employeeID FROM Employees
+      WHERE salary > @salary
+      set rowcount 1
+      select @employeeID = employeeID from Employees
+      end
+      set rowcount 0
+---
 
-   SourceTree clones your repository from Bitbucket to your local machine and will open to the new repository.
-
-### TASK 2. Make a change
-
-Learn the Git basics of stage, commit, push when you make a change to the 'sample.html' file.
-
-1.  Double-click on your tutorial repo.
-2.  Select **Working Copy** from the left hand navigation.
-3.  Select **Show All** from the list above 
-
-    SourceTree shows the files in the working tree.
-    
-4.  Select the **sample.html** file and do one of the following:
-	*For Mac press 'control + click' and select **Show In Finder**
-	*For Windows right click and select **Show in Explorer**
-6.  Using your favorite editor, edit the `sample.html` file.
-7.  Change the heading from `My First File` to `Playing in the Sand`. 
-8.  Save and close the file.
-9.  Return to SourceTree. 
-
-    SourceTree changes the file's icon to modified.  
-    
-10.  Select the 'sample.html' file and drag it into  **Staged Files** area.
-11.  Click **Commit**.
-12.  Enter a commit message.
-13.  Press **Commit**.
-14.  Click **Push** to send your changes to Bitbucket.
-15.  Click **Commits**, in Bitbucket, to view your change.
-
-- - -
-
-## Using the command line from Linux, OSX or [GitBash](http://git-scm.com/download/win) for Windows. 
-
-### Task 1. Clone your repository:
-
-Cloning makes a local copy of the repository for you.
-
-1. Click the **Clone** button in Bitbucket. 
-2. Make sure the protocol is set to HTTPS.
-
-    Bitbucket pre-fills the clone command for you.
-    
-3. Copy the command.
-4. Open a terminal, or launch a GitBash terminal, on your local machine.
-5. Navigate to the directory where you want your files.
-6. Paste the command at the prompt.
-7. Press ENTER on your keyboard.
-
-   Git clones your repository from Bitbucket to your local machine.
-> If you have trouble cloning from these instructions you can check out the more [detailed tutorial](https://confluence.atlassian.com/x/W4DHHw).
-
-
-### If you are using a terminal's (Linux/OSX/GitBash) command line:
-
-Learn the Git basics of stage, commit, push when you make a change to the 'sample.html' file.
-
-1.  Go to your terminal window and navigate to the repository root.
-2.  Using your favorite editor, edit the `sample.html` file.
-3.  Change the heading from `My First File` to `Playing in the Sand`. 
-4.  Save and close the file.
-5.  Stage the file with Git.
-    
-    `git add sample.html`
-    
-6.  Commit the change.
- 
-    `git commit -m "changing sample.html"`
-    
-7. Push to Bitbucket.
-
-    `git push`
-    
-    The system prompts you for a username/password.
-    
-8. Enter your Bitbucket account name and the password.
-9. After the push completes, click **Commits**, in Bitbucket, to view your change.
+> Philip: Thank you for your time and for reviewing my work. If you are to have ANY issues building or running the application, please let me know because it's working on my side. Even though I didn't have tons of time, I still think you will enjoy the application for what it is. I hope to see you at work in the near future. And just FYI: I typically only deploy the compiled .dll file to a server, especially in a production environment but I'm assuming you want to see the codebehind.
