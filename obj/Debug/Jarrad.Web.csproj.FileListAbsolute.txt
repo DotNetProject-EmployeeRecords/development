@@ -2,3 +2,4 @@ C:\Users\admin\Downloads\Employee Info Starter Kit\C#\bin\Jarrad.Web.dll
 C:\Users\admin\Downloads\Employee Info Starter Kit\C#\bin\Jarrad.Web.pdb
 C:\Users\admin\Downloads\Employee Info Starter Kit\C#\obj\Debug\Jarrad.Web.dll
 C:\Users\admin\Downloads\Employee Info Starter Kit\C#\obj\Debug\Jarrad.Web.pdb
+C:\Users\admin\Downloads\Employee Info Starter Kit\C#\obj\Debug\Jarrad.Web.csprojResolveAssemblyReference.cache
