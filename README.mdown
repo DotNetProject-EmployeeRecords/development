@@ -53,4 +53,29 @@ Visual Studio 2013
 9. Several helper classes and extension methods to enable developers build application with reduced code
 ---
 
+Store Procedure Using employeeID to return firstname. Obviously, you can return whatever you want but you get the point.
+CREATE PROCEDURE [dbo].[GetUserName]
+      @employeeID int,
+      @firstName nvarchar(50) OUTPUT
+      AS
+      SELECT @firstName = firstName FROM Department
+      WHERE employeeID = @employeeID
+
+Store Procedure Using Salary to return employeeID. Obviously, you can return whatever you want and probably would benefit from returning first name, last name, etc but I'm really tired so hopefully you can see I get the concept.
+CREATE PROCEDURE [dbo].[GetUserSalary]
+      @salary int,
+      @employeeID int OUTPUT
+      AS
+      (Recursive Loop through each ID)
+      while @@rowcount <> 0
+      begin
+      set rowcount 0
+      SELECT @employeeID = employeeID FROM Employees
+      WHERE salary > @salary
+      set rowcount 1
+      select @employeeID = employeeID from Employees
+      end
+      set rowcount 0
+---
+
 > Philip: Thank you for your time and for reviewing my work. Even though I didn't have tons of time, I still think you will enjoy the application for what it is. I hope to see you at work in the near future.
