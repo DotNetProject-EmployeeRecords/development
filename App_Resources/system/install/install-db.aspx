@@ -10,7 +10,6 @@
 		Provide the database server information to create Jarrad's employee database, which you will utilize moving forward.
         <br />
 		Once the database installs successfully, you will be able to use my application.
-        kit.
     </p>
     <asp:ScriptManager ID="scriptManager" runat="server" />
     <asp:UpdatePanel ID="upd" runat="server">
